@@ -1,0 +1,100 @@
+.openButton, .closeButton{
+    display: none;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 240px;
+    min-width: 240px;
+    top: 0; left: 0; height: 100%;
+    transform: translateX(-100%);
+    transition:transform 0.25s ease;
+    background-color: light-dark(var(--light-secondary), var(--dark-secondary));
+    transform: translateX(0);
+}
+
+.headerBar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.nav {
+    padding: 0.75rem;
+    flex: 1;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    padding: 9px;
+    border-color: light-dark(var(--light-accent), var(--dark-accent));
+    border-style: solid;
+    border-radius: 8px;
+    font-size: 14px;
+    background: none;
+    transition: backgroud-color 0.15s, color 0.15s;
+}
+
+.navItem.active {
+    background-color: light-dark(var(--light-accent), var(--dark-accent));
+}
+
+.navItem:hover {
+    transition: background-color 0.25s ease;
+    background-color: light-dark(var(--light-accent), var(--dark-fourth));
+}
+
+.footerBar{
+    padding: 9px;
+}
+
+@media (max-width: 768px) {
+    .closeButton {
+        display: flex;
+        cursor: pointer;
+        background: none;
+        border: none;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .openButton{
+        display: flex;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 50;
+        background: light-dark(var(--light-secondary), var(--dark-secondary));
+        border: 1px solid rgba(0,0,0,0.1);
+        padding: 8px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0; left: 0; height: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+        z-index: 100;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .overlay{
+        display: block;
+        position: fixed;
+        inset: 0;
+        background-color: ligth-dark(var(--light-cont), var(--dark-cont));
+        z-index: 99;
+    }
+}

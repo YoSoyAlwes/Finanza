@@ -1,0 +1,6 @@
+.header {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: light-dark(var(--light-secondary), var(--dark-secondary));
+}
