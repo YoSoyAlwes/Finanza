@@ -1,4 +1,6 @@
 {
-    "amount": 0,
-    "type": "EXPENSES"
+	"id": "random",
+	"date": "fecha",
+	"amount": 0,
+	"type": "EXPENSES"
 }

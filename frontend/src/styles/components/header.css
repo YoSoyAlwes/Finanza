@@ -1,0 +1,6 @@
+.header {
+	align-content: center;
+	background-color: light-dark(var(--light-secondary), var(--dark-secondary));
+	font-size: 24px;
+	text-align: center;
+}

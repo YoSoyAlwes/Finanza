@@ -1,29 +1,40 @@
 :root {
-  color-scheme: light dark;
+	color-scheme: light dark;
 
-  --light-primary: #d9d9d9;
-  --light-secondary: #F4F5FA;
-  --light-third: #F8F8FF;
-  --light-fourth: #0F0F0F;
-  --light-cont: #30303e;
-  --light-accent: #000080;
+	--light-primary: #d9d9d9;
+	--light-secondary: #f4f5fa;
+	--light-third: #f8f8ff;
+	--light-fourth: #0f0f0f;
+	--light-cont: #30303e;
+	--light-accent: #000080;
 
-  --dark-primary: #141413;
-  --dark-secondary: #30302e;
-  --dark-third: #0F0F0F;
-  --dark-fourth: #696969;
-  --dark-cont: #ececec;
-  --dark-accent: #50C878;
+	--dark-primary: #141413;
+	--dark-secondary: #30302e;
+	--dark-third: #0f0f0f;
+	--dark-fourth: #696969;
+	--dark-cont: #ececec;
+	--dark-accent: #50c878;
 }
 
 body {
-  background-color: light-dark(var(--light-primary), var(--dark-primary));;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+	background-color: light-dark(var(--light-primary), var(--dark-primary));
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		'Open Sans',
+		'Helvetica Neue',
+		sans-serif;
 }

@@ -1,55 +1,50 @@
 .containerInformation {
-  position: relative;
-  left: 240px;
-}
-
-.header {
-  align-content: center;
-  background-color: light-dark(var(--light-secondary), var(--dark-secondary));
-  font-size: 24px;
-  text-align: center;
+	position: relative;
+	left: 240px;
 }
 
 .boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  place-items: center;
-  width: 90%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	place-items: center;
+	width: 90%;
 }
 
-.income, .expenses, .balance {
-  background-color: light-dark(var(--light-secondary), var(--dark-secondary));
-  border-style: solid;
-  border-color: light-dark(var(--light-secondary), var(--dark-secondary));
-  border-radius: 16px;
-  padding: 2vh;
-  margin: 2vh;
-  width: 400px;
-  height: 200px;
+.income,
+.expenses,
+.balance {
+	background-color: light-dark(var(--light-secondary), var(--dark-secondary));
+	border-style: solid;
+	border-color: light-dark(var(--light-secondary), var(--dark-secondary));
+	border-radius: 16px;
+	padding: 2vh;
+	margin: 2vh;
+	width: 400px;
+	height: 200px;
 }
-
-
 
 @media (max-width: 768px) {
-  .containerInformation {
-    position: static;
-    margin: 0;
-  }
+	.containerInformation {
+		position: static;
+		margin: 0;
+	}
 
-    .boxes {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        place-items: center;
-        width: 90%;
-        height: auto;
-    }
+	.boxes {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+		place-items: center;
+		width: 90%;
+		height: auto;
+	}
 
-    .income, .expenses, .balance {
-      padding: 2vh;
-      margin: 2vh;
-      width: 300px;
-      height: 150px;
-    }
+	.income,
+	.expenses,
+	.balance {
+		padding: 2vh;
+		margin: 2vh;
+		width: 300px;
+		height: 150px;
+	}
 }
