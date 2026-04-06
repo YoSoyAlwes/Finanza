@@ -1,9 +1,9 @@
-export const TransactionTable = () => {
+import '../../styles/components/Table/transactionTable.css';
+
+export const TransactionTable = ({ onSubmit, onChange }) => {
 	return (
-		<>
-			<form>
-				<label htmlFor="id">ID</label>
-				<input type="text" name="id" required />
+		<div className="containerTable">
+			<form onSubmit={onSubmit} onChange={onChange}>
 				<label htmlFor="date">Fecha</label>
 				<input type="date" name="date" id="date" required />
 				<label htmlFor="title">Titulo</label>
@@ -17,6 +17,6 @@ export const TransactionTable = () => {
 				</select>
 				<button type="submit">Subir</button>
 			</form>
-		</>
+		</div>
 	);
 };

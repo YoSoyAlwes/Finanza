@@ -1,0 +1,22 @@
+.containerInformation {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	max-width: 90%;
+}
+
+.transactionsTable {
+	border-collapse: collapse;
+	width: 80%;
+}
+
+.transactionsTable th,
+.transactionsTable td {
+	border: 1px solid light-dark(var(--light-cont), var(--dark-cont));
+	padding: 8px 12px;
+	text-align: left;
+}
+
+.transactionsTable th {
+	background-color: light-dark(var(--light-cont), var(--dark-cont));
+}

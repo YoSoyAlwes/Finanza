@@ -7,8 +7,7 @@ export const SideBar = ({ active }) => {
 	const navItems = [
 		{ id: 'dashboard', label: 'Dashboard' },
 		{ id: 'newTransaction', label: 'Nueva Transaccion' },
-		{ id: 'updateTransaction', label: 'Editar Transaccion' },
-		{ id: 'history', label: 'Historial' },
+		{ id: 'transactions', label: 'Transacciones' },
 	];
 
 	const navigate = useNavigate();

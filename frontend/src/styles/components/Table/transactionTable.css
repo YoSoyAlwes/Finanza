@@ -1,0 +1,49 @@
+.containerTable {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: light-dark(var(--light-secondary), var(--dark-secondary));
+	gap: 2vh;
+	border-style: solid;
+	border-color: light-dark(var(--light-secondary), var(--dark-secondary));
+	border-width: 24px;
+	border-radius: 6px;
+	width: 360px;
+}
+
+input,
+select {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 25px;
+	background-color: light-dark(var(--light-fourth), var(--dark-fourth));
+	border-style: solid;
+	border-color: light-dark(var(--light-accent), var(--dark-accent));
+	border-width: 3px;
+	border-radius: 6px;
+}
+
+button {
+	background-color: light-dark(var(--light-accent), var(--dark-accent));
+	border-style: solid;
+	border-color: light-dark(var(--light-accent), var(--dark-accent));
+	border-width: 3px;
+	border-radius: 6px;
+	width: 75px;
+	height: 35px;
+}
+
+@media (max-width: 768px) {
+	form {
+		width: 70%;
+	}
+}
