@@ -17,6 +17,10 @@
 	text-align: left;
 }
 
+.title {
+	color: light-dark(var(--dark-cont), var(--light-cont));
+}
+
 .transactionsTable th {
 	background-color: light-dark(var(--light-cont), var(--dark-cont));
 }

@@ -8,6 +8,7 @@ export const SideBar = ({ active }) => {
 		{ id: 'dashboard', label: 'Dashboard' },
 		{ id: 'newTransaction', label: 'Nueva Transaccion' },
 		{ id: 'transactions', label: 'Transacciones' },
+		{ id: 'updateTransaction', label: 'Editar Transaccion', disabled: true },
 	];
 
 	const navigate = useNavigate();
@@ -41,6 +42,7 @@ export const SideBar = ({ active }) => {
 							key={item.id}
 							className={`navItem ${active === item.id ? 'active' : ''}`}
 							onClick={() => navigate(`/${item.id}`)}
+							disabled={item.disabled}
 						>
 							{item.label}
 						</button>
